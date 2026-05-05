@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta a Matilde De La Hoz para colaboraciones y proyectos.">
+    <title>Matilde De La Hoz | Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav id="navbar">
+    <div class="nav-inner">
+        <div class="nav-links">
+            <a href="{{ url_for('inicio') }}">Inicio</a>
+            <a href="{{ url_for('experiencia') }}">Experiencia</a>
+            <a href="{{ url_for('proyectos') }}">Proyectos</a>
+            <a href="{{ url_for('contacto') }}" class="active">Contacto</a>
+        </div>
+    </div>
+</nav>
+
+<div class="page">
+    <div class="section-inner" style="padding-top: 20px;">
+
+        <div class="contact-hero">
+            <span class="contact-badge">● ABIERTA A NUEVOS PROYECTOS</span>
+            <h1 class="contact-title">
+                Tu visión,<br>
+                <span class="contact-accent"> Mi enfoque</span><br>
+                Grandes resultados.
+            </h1>
+            <p class="contact-sub">
+                Unamos esfuerzos para desarrollar algo realmente impactante Con formación
+                profesional en desarrollo web y tecnología, puedo aportar soluciones que lleven tu proyecto más allá de lo esperado.
+            </p>
+        </div>
+
+        <div class="contact-channels">
+            <a href="https://github.com/mtd2912" target="_blank" rel="noopener noreferrer" class="contact-channel">
+                <div class="channel-icon"><i class="fab fa-github"></i></div>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/matilde-de-la-hoz-330242274" target="_blank" rel="noopener noreferrer" class="contact-channel">
+                <div class="channel-icon"><i class="fab fa-linkedin-in"></i></div>
+                <span>LinkedIn</span>
+            </a>
+            <a href="mailto:matildelahoz2912@outlook.com" class="contact-channel">
+                <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+                <span>Email</span>
+            </a>
+            <a href="https://discord.com/users/1229609897734307952" target="_blank" rel="noopener noreferrer" class="contact-channel">
+                <div class="channel-icon"><i class="fab fa-discord"></i></div>
+                <span>Discord</span>
+            </a>
+        </div>
+
+        <div class="contact-cta-box">
+            <h3>¿Tienes un proyecto en mente o una oportunidad de colaboración?</h3>
+            <p>Selecciona el canal de tu preferencia y especifica tu requerimiento.<br>Garantizo una respuesta oportuna y eficiente.</p>
+            <a href="mailto:matildelahoz2912@outlook.com" class="btn-primary">
+                Envíame un mensaje <i class="fas fa-paper-plane"></i>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <p class="footer-name">Matilde De La Hoz / Portafolio</p>
+            <p class="footer-copy">© 2026</p>
+        </div>
+        <div class="footer-socials">
+            <a href="https://github.com/mtd2912" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/matilde-de-la-hoz-330242274" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:matildelahoz2912@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://discord.com/users/1229609897734307952" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="fab fa-discord"></i></a>
+        </div>
+        
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
