@@ -5,7 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__,
+            template_folder='../frontend/templates',
+            static_folder='../frontend/static')
 
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
